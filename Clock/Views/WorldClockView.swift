@@ -12,44 +12,7 @@ struct WorldClockView: View {
         NavigationStack{
             VStack {
                 //Ottawa
-                HStack{
-                    VStack {
-                        Text ("Today, +0HRS")
-                        Text ("Ottawa")
-                            .font(.system(.largeTitle, design: .default, weight: .thin))
-                    }
-                    
-                    Spacer()
-                    
-                    //right side
-                    Text("6:35")
-                        .font(.system(size: 64.0, weight: .thin,  design: .default))
-                    Text("AM")
-                        .font(.system(.largeTitle, design: .default, weight: .thin))
-                    
-                }
-                
-                
-                .navigationTitle("World Clock")
-                .toolbar {
-                    
-                    ToolbarItem(placement: .topBarLeading) {
-                        
-                        Button("Edit") {
-                            // Does nothing right now
-                        }
-                        
-                    }
-                    
-                    ToolbarItem(placement: .primaryAction) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus")
-        
-                        }
-                    }
-                }
+                ExtractedView(timeZoneOffset: "+0", city: "Ottawa", time: "6:35", amOrPm: "AM")
             }
         }
     }
@@ -59,4 +22,53 @@ struct WorldClockView: View {
 
 #Preview {
     LandingView()
+}
+
+struct ExtractedView: View {
+    
+    //MARK Stored properties
+    let timeZoneOffset: String
+    let city: String
+    let time: String
+    let amOrPm: String
+    var body: some View {
+        HStack{
+            VStack {
+                Text ("Today, \(timeZoneOffset)+0HRS")
+                Text (city)
+                    .font(.system(.largeTitle, design: .default, weight: .thin))
+            }
+            
+            Spacer()
+            
+            //right side
+            Text(time)
+                .font(.system(size: 64.0, weight: .thin,  design: .default))
+            Text(amOrPm)
+                .font(.system(.largeTitle, design: .default, weight: .thin))
+            
+        }
+        
+        
+        .navigationTitle("World Clock")
+        .toolbar {
+            
+            ToolbarItem(placement: .topBarLeading) {
+                
+                Button("Edit") {
+                    // Does nothing right now
+                }
+                
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "plus")
+                    
+                }
+            }
+        }
+    }
 }

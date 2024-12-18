@@ -12,7 +12,7 @@
 		ACC032A92D11BC5700B65073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC032A12D11BC5700B65073 /* Preview Assets.xcassets */; };
 		ACC032AA2D11BC5700B65073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC032A32D11BC5700B65073 /* Assets.xcassets */; };
 		ACC032AD2D11BD1E00B65073 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC032AC2D11BD1E00B65073 /* WorldClockView.swift */; };
-		ACC032AF2D11BD3700B65073 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC032AE2D11BD3700B65073 /* AlarmsView.swift */; };
+		ACC032AF2D11BD3700B65073 /* WakeUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC032AE2D11BD3700B65073 /* WakeUpView.swift */; };
 		ACC032B12D11BD4E00B65073 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC032B02D11BD4E00B65073 /* StopwatchView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,7 @@
 		ACC032A42D11BC5700B65073 /* ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockApp.swift; sourceTree = "<group>"; };
 		ACC032A52D11BC5700B65073 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		ACC032AC2D11BD1E00B65073 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
-		ACC032AE2D11BD3700B65073 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
+		ACC032AE2D11BD3700B65073 /* WakeUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpView.swift; sourceTree = "<group>"; };
 		ACC032B02D11BD4E00B65073 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 			children = (
 				ACC032A52D11BC5700B65073 /* LandingView.swift */,
 				ACC032AC2D11BD1E00B65073 /* WorldClockView.swift */,
-				ACC032AE2D11BD3700B65073 /* AlarmsView.swift */,
+				ACC032AE2D11BD3700B65073 /* WakeUpView.swift */,
 				ACC032B02D11BD4E00B65073 /* StopwatchView.swift */,
 			);
 			path = Views;
@@ -159,7 +159,7 @@
 			files = (
 				ACC032A72D11BC5700B65073 /* ClockApp.swift in Sources */,
 				ACC032AD2D11BD1E00B65073 /* WorldClockView.swift in Sources */,
-				ACC032AF2D11BD3700B65073 /* AlarmsView.swift in Sources */,
+				ACC032AF2D11BD3700B65073 /* WakeUpView.swift in Sources */,
 				ACC032B12D11BD4E00B65073 /* StopwatchView.swift in Sources */,
 				ACC032A82D11BC5700B65073 /* LandingView.swift in Sources */,
 			);

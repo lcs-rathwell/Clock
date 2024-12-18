@@ -1,18 +1,18 @@
 //
-//  AlarmsView.swift
+//  AlarmView.swift
 //  Clock
 //
-//  Created by Jack William Rathwell on 2024-12-17.
+//  Created by Jack William Rathwell on 2024-12-18.
 //
 
 import SwiftUI
 
-struct AlarmsView: View {
-    var body: some View {
-        NavigationStack{
-            VStack{
+var body: some View {
+    NavigationStack{
+
+        VStack{
+            HStack {
                 ZStack {
-                    HStack {
                         Image(systemName: "bed.double.fill")
                             .foregroundColor(.white)
                             .font(.title2)
@@ -33,45 +33,22 @@ struct AlarmsView: View {
                         .font(.system(size: 64.0, weight: .thin,  design: .default))
                     Text("AM")
                         .font(.system(.largeTitle, design: .default, weight: .thin))
-                      
+                    
                     
                     Spacer()
                     
                     Toggle("",isOn: Binding.constant(false))
                 }
+                .padding()
                 Divider()
                     .background(Color.white)
                 Spacer()
-                    
                 
-                
-                
-            }
-            .navigationTitle("Alarms")
-            .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-      
-                    Button("Edit") {
-                        // Does nothing right now
-                    }
-                }
-               
-                    
-                
-                ToolbarItem(placement: .primaryAction) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "plus")
-                        
-                    }
-                }
             }
         }
     }
-}
 
-
+                
 #Preview {
     LandingView()
 }

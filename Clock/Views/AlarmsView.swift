@@ -1,9 +1,17 @@
+//
+//  AlarmsView.swift
+//  Clock
+//
+//  Created by Jack William Rathwell on 2024-12-18.
+//
+
+
 import SwiftUI
 
 struct AlarmsView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            VStack(spacing:15) {
                 ZStack {
                     HStack {
                         Image(systemName: "bed.double.fill")
@@ -18,15 +26,14 @@ struct AlarmsView: View {
                 
                 //other text
                 .padding()
-                ZStack {
-                    HStack {
-                        Text("Other")
-                            .foregroundColor(.white)
-                            .font(.headline)
-                        Spacer()
-                    }
+ 
+                HStack {
+                    Text("Other")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    Spacer()
                 }
-             
+                
                 
                 Spacer()
                 // White line
@@ -48,24 +55,23 @@ struct AlarmsView: View {
                 WakeUpView(time: "9:15", amOrPm: "AM")
                 Divider()
                     .background(Color.white)
-                    Spacer()
+                Spacer()
                 
-                    
+                
                 
                 
                 
             }
-            
             .navigationTitle("Alarms")
             .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-      
+                ToolbarItem(placement: .topBarLeading) {
+                    
                     Button("Edit") {
                         // Does nothing right now
                     }
                 }
-               
-                    
+                
+                
                 
                 ToolbarItem(placement: .primaryAction) {
                     Button {
@@ -78,4 +84,8 @@ struct AlarmsView: View {
             }
         }
     }
+}
+
+#Preview {
+    LandingView()
 }
